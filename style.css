@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight:700;
+}
+.links:hover{
+    text-decoration: underline;
+    color: red;
+}
+.homeContents{
+    margin: 10% 0px 0px 8%;
+}
+#username{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#lname{
+    color: orange;
+}
+#userDetails{
+    line-height: 1.2;
+    font-size: 20px;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.homeImages{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+.homeImages:hover #shape{
+    bottom: 100px;
+}
+.homeImages:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 10px 8% 0px 8%;
+}
+.sectionHead{
+    text-align: center;
+}
+.mainHead{
+    padding-top: 200px;
+    font-size: 30px;
+}
+.subHead{
+    color: green;
+    font-size: 20px;
+}
+.aboutBody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.aboutImage img{
+    width: 60%;
+}
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.aboutBox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.aboutBox>span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 0px 8% 0px 8%;
+}
+.skillContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+#mySkillImg{
+    width: 90%;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.barHaed, .barPercent{
+    font-weight: 500;
+    font-size: 1.2 rem;
+}
+.baseBar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlBar{
+    background-color: orange;
+    width: 92%;
+}
+.cssBar{
+    background-color: orange;
+    width: 85%;
+}
+.jsBar{
+    background-color: orange;
+    width: 88%;
+}
+.reactBar{
+    background-color: orange;
+    width: 82%;
+}
+#contact{
+    margin: 0px 8%;
+}
+.iconCollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    /* border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white, yellow,orange, red);
+}
+.brands{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin: 8%;
+}
+#copyright{
+    font-weight: 500;
+    text-align: center;
+}
+.upArrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: orange;
+}
